@@ -31,7 +31,7 @@ public class Kozlik extends Korotyshka implements interfaces.PersonDie {
                 System.out.println(name + " не смешно в этот раз, он стал немного голоднее.");
             }
         } catch (LowEnergyException e) {
-            System.out.println("АВАРИЯ у Козлика: " + e.getMessage());
+            System.out.println("Ой, у Козлика что-то случилось... " + e.getMessage());
             die();
         }
     }
@@ -51,4 +51,5 @@ public class Kozlik extends Korotyshka implements interfaces.PersonDie {
     public String toString() {
         return "Kozlik{name='" + name + "', hungerLevel=" + hungerLevel + ", isDead=" + isDead + "}";
     }
+
 }
