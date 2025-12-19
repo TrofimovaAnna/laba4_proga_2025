@@ -1,6 +1,5 @@
 package exceptions;
 
-// Непроверяемое (unchecked) исключение
 public class LowEnergyException extends RuntimeException {
     public LowEnergyException(String message) {
         super(message);
@@ -10,4 +9,5 @@ public class LowEnergyException extends RuntimeException {
     public String getMessage() {
         return "Недостаточно энергии: " + super.getMessage();
     }
+
 }
