@@ -6,7 +6,7 @@ public class Ball extends FairObject {
     protected material.Material material;
 
     public Ball(material.Material material) {
-        super("Резиновый мячик", 5, new Coordinates(0, 0)); // мяч у Незнайки в руках
+        super("Резиновый мячик", 5, new Coordinates(0, 0));
         this.material = material;
     }
 
