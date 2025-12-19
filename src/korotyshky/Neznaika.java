@@ -58,7 +58,6 @@ public class Neznaika extends Korotyshka implements interfaces.PersonDie {
                         System.out.println(name + " смеётся! Голод немного уменьшился.");
                     }
                 } catch (FairException e) {
-                    // Зеркало уже разбито
                     System.out.println(name + " бросил мячик в зеркало, но оно уже разбито!");
                     System.out.println(e.getMessage());
                     changeHungerLevel(2); // досада
@@ -90,4 +89,5 @@ public class Neznaika extends Korotyshka implements interfaces.PersonDie {
     public String toString() {
         return "Neznaika{name='" + name + "', hungerLevel=" + hungerLevel + ", isDead=" + isDead + "}";
     }
+
 }
