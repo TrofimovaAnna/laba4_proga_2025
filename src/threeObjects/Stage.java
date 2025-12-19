@@ -27,7 +27,6 @@ public class Stage extends FairObject {
 
     @Override
     public void interact(korotyshky.Korotyshka character) {
-        // noop
     }
 
     public Material getMaterial() {
@@ -51,4 +50,5 @@ public class Stage extends FairObject {
     public String toString() {
         return "Stage{name='" + name + "', material=" + material + ", position=" + position + ", destroyed=" + isDestroyed() + "}";
     }
+
 }
