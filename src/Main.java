@@ -78,7 +78,7 @@ public class Main {
                 break;
             }
 
-            System.out.println("\nход " + turn);
+            System.out.println("ход " + turn);
 
             if (kozlikAlive && !kozlikSatisfied && !mirror.isBroken()) {
                 kozlik.lookIntoMirror(mirror);
@@ -98,7 +98,7 @@ public class Main {
                 try {
                     neznaika.changeHungerLevel(1);
                 } catch (LowEnergyException e) {
-                    System.out.println("АВАРИЯ у Незнайки: " + e.getMessage());
+                    System.out.println("Ой, у Незнайки неприятности... " + e.getMessage());
                     neznaika.die();
                 }
             }
