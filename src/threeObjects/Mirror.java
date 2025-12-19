@@ -15,7 +15,6 @@ public class Mirror extends FairObject {
         this.damageLevel = 0;
     }
 
-    // Метод теперь может выбрасывать проверяемое исключение
     public void takeDamage(int amount) throws FairException {
         if (isBroken()) {
             throw new FairException("Нельзя бросать мяч, зеркало уже разбито!");
@@ -60,4 +59,5 @@ public class Mirror extends FairObject {
     public String toString() {
         return "Mirror{name='" + name + "', material=" + material + ", position=" + position + ", broken=" + isBroken() + "}";
     }
+
 }
