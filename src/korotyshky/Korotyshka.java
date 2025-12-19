@@ -19,7 +19,6 @@ public abstract class Korotyshka {
     public void changeHungerLevel(int amount) {
         this.hungerLevel = Math.max(0, this.hungerLevel + amount);
 
-        // Смерть от голода при hungerLevel > 100 (а не 150!)
         if (this.hungerLevel > 100) {
             throw new LowEnergyException(name + " умер от голода!");
         }
@@ -49,4 +48,5 @@ public abstract class Korotyshka {
     public String toString() {
         return "Korotyshka{name='" + name + "', hungerLevel=" + hungerLevel + ", isDead=" + isDead + "}";
     }
+
 }
