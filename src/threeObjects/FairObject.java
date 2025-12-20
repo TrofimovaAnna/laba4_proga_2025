@@ -14,8 +14,6 @@ public abstract class FairObject implements Targetable {
         this.position = position;
     }
 
-    public abstract void interact(korotyshky.Korotyshka character);
-
     public String getName() { return name; }
     public int getSize() { return size; }
     public Coordinates getPosition() { return position; }
@@ -39,4 +37,5 @@ public abstract class FairObject implements Targetable {
     public String toString() {
         return "FairObject{name='" + name + "', position=" + position + "}";
     }
+
 }
