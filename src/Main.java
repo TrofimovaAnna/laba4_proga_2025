@@ -13,10 +13,10 @@ import interfaces.Targetable;
 
 public class Main {
     public static void main(String[] args) {
-        new Main().runScenario();
+        new Main().runGame();
     }
 
-    public void runScenario() {
+    public void runGame() {
         System.out.println("Игра началась");
 
         Ball ball = new Ball(Material.RUBBER);
