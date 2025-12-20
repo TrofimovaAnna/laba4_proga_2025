@@ -33,8 +33,14 @@ public class Neznaika extends Korotyshka implements interfaces.PersonDie {
         boolean hit = rand.nextInt(100) < accuracy;
 
         if (hit) {
-            String targetName = (target instanceof Artist) ? "Артиста" : ((FairObject) target).getName();
-            System.out.println(name + " бросил мячик и попал в " + targetName);
+            String targetName;
+            if (target instanceof Artist) {
+                targetName = "Артиста";
+                System.out.println(name + " бросил мячик и попал в " + targetName);
+            } else if (target instanceof FairObject k) {
+                targetName = k.getName();
+                System.out.println(name + " бросил мячик и попал в " + targetName);
+            }
 
             if (target instanceof Artist) {
                 if (rand.nextInt(100) < 10) {
@@ -91,3 +97,4 @@ public class Neznaika extends Korotyshka implements interfaces.PersonDie {
     }
 
 }
+
