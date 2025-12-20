@@ -74,7 +74,7 @@ public class Main {
             boolean neznaikaDone = !neznaikaAlive || neznaikaSatisfied;
             boolean kozlikDone = !kozlikAlive || kozlikSatisfied;
             if (neznaikaDone && kozlikDone) {
-                System.out.println("\nИгра закончилась. Один герой погиб или насытился, другой завершил участие.");
+                System.out.println("\nИгра закончилась. Один герой погиб/насытился, другой завершил участие.");
                 break;
             }
 
