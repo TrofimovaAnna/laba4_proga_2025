@@ -25,10 +25,6 @@ public class Stage extends FairObject {
         return strength <= 0;
     }
 
-    @Override
-    public void interact(korotyshky.Korotyshka character) {
-    }
-
     public Material getMaterial() {
         return material;
     }
@@ -52,3 +48,4 @@ public class Stage extends FairObject {
     }
 
 }
+
