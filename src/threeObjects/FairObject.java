@@ -23,9 +23,7 @@ public abstract class FairObject implements Targetable {
         if (this == o) return true;
         if (!(o instanceof FairObject)) return false;
         FairObject that = (FairObject) o;
-        return size == that.size &&
-                java.util.Objects.equals(name, that.name) &&
-                java.util.Objects.equals(position, that.position);
+        return size == that.size && java.util.Objects.equals(name, that.name) && java.util.Objects.equals(position, that.position);
     }
 
     @Override
@@ -39,3 +37,4 @@ public abstract class FairObject implements Targetable {
     }
 
 }
+
