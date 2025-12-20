@@ -108,8 +108,6 @@ public class Main {
                 System.out.println("\nИгра длится слишком долго");
                 break;
             }
-
-            try { Thread.sleep(300); } catch (InterruptedException ignored) {}
         }
     }
 
