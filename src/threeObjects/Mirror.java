@@ -29,11 +29,6 @@ public class Mirror extends FairObject {
         return damageLevel >= 90;
     }
 
-    @Override
-    public void interact(korotyshky.Korotyshka character) {
-        // noop
-    }
-
     public int getDamageLevel() {
         return damageLevel;
     }
@@ -61,3 +56,4 @@ public class Mirror extends FairObject {
     }
 
 }
+
