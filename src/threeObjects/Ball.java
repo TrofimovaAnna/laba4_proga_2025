@@ -15,11 +15,6 @@ public class Ball extends FairObject {
     }
 
     @Override
-    public void interact(korotyshky.Korotyshka character) {
-        // noop
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Ball)) return false;
@@ -37,3 +32,4 @@ public class Ball extends FairObject {
         return "Ball{material=" + material + "}";
     }
 }
+
